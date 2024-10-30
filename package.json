@@ -1,0 +1,28 @@
+{
+  "name": "shigoto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:dev": "nodemon --watch '**/*.ts' --exec \"npm run build && node dist/index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bufferutil": "^4.0.8",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "luxon": "^3.5.0",
+    "redis": "^4.7.0",
+    "utf-8-validate": "^6.0.4",
+    "zlib-sync": "^0.1.9"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
